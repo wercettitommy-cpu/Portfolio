@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abdulaziz Abdullayev — Frontend dasturchi</title>
+<meta name="description" content="Abdulaziz Abdullayev portfolio: PDP Junior Frontend bitiruvchisi, PDP University talabasi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="net" aria-hidden="true"></canvas>
+
+<header class="nav">
+  <a class="logo" href="#top">abdulaziz.eth</a>
+  <nav>
+    <a href="#chain">Yo'l</a>
+    <a href="#skills">Ko'nikmalar</a>
+    <a href="#contact">Aloqa</a>
+  </nav>
+  <button id="wallet" class="btn btn-ghost" type="button">Ulanish</button>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <p class="status"><span class="dot"></span> Yangi loyihalar uchun ochiq</p>
+      <h1>Abdulaziz<br>Abdullayev</h1>
+      <p class="lead">Frontend dasturchi. Tez, aniq va qulay veb-interfeyslar yarataman. Hozir <strong>PDP University</strong> talabasiman.</p>
+      <div class="cta">
+        <a class="btn" href="#contact">Bog'lanish</a>
+        <a class="btn btn-ghost" href="#chain">Yo'limni ko'rish</a>
+      </div>
+      <dl class="facts">
+        <div><dt>Yosh</dt><dd id="age">—</dd></div>
+        <div><dt>Tug'ilgan kun</dt><dd>19-oktabr, 2008</dd></div>
+        <div><dt>Yo'nalish</dt><dd>Frontend</dd></div>
+      </dl>
+    </div>
+    <figure class="photo" id="tilt">
+      <img src="./Abdulaziz.jpg" alt="Abdulaziz Abdullayev portreti" width="2880" height="1998">
+      <figcaption class="badge"><span>PDP</span> Praktor</figcaption>
+    </figure>
+  </section>
+
+  <section id="chain" class="section">
+    <h2>Mening yo'lim</h2>
+    <p class="sub">Har bir bosqich oldingisiga bog'langan. Bloklarni bosib, hash'ni ko'ring.</p>
+    <ol class="blocks" id="blocks"></ol>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Ko'nikmalar</h2>
+    <ul class="skills" id="skillList"></ul>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Bog'lanish</h2>
+    <div class="contact-grid">
+      <div class="links">
+        <a href="tel:+998779661848"><span>Telefon</span>+998 77 966 18 48</a>
+        <a href="https://t.me/oo7_AAB" target="_blank" rel="noopener"><span>Telegram</span>@oo7_AAB</a>
+        <a href="https://instagram.com/_abdulaziz232_" target="_blank" rel="noopener"><span>Instagram</span>@_abdulaziz232_</a>
+      </div>
+      <form id="form" class="form">
+        <label>Ismingiz<input name="name" required maxlength="60"></label>
+        <label>Xabar<textarea name="message" rows="4" required maxlength="800"></textarea></label>
+        <button class="btn" type="submit">Xabar yuborish</button>
+        <p id="formMsg" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">© <span id="yr"></span> Abdulaziz Abdullayev</footer>
+<script src="script.js"></script>
+</body>
+</html>
